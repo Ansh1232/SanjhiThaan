@@ -1,4 +1,4 @@
-import { Link, NavLink, Outlet } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 import brandIcon from '../assets/icon.png';
 import { useApp } from '../context/AppContext.jsx';
 
@@ -38,7 +38,6 @@ export default function AppShell() {
             <span className="brand-mark"><img className="brand-image" src={brandIcon} alt="" /></span>
             <span className="brand-name">Saadh <span>Sangat</span></span>
           </NavLink>
-          <Link className="mobile-city" to="/settings">{user.city}</Link>
         </header>
         {appError && <div className="app-alert" role="alert"><span>{appError}</span><button type="button" onClick={clearAppError} aria-label="Dismiss message">Dismiss</button></div>}
         <Outlet />

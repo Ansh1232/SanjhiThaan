@@ -1,6 +1,6 @@
 import { useApp } from '../context/AppContext.jsx';
 
-export default function SessionCard({ session, onRsvp }) {
+export default function SessionCard({ session, onRsvp, compact = false }) {
   const { user, token } = useApp();
   return (
     <article className={`session-card${compact ? ' compact' : ''}`}>
