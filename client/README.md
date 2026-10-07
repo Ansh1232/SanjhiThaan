@@ -33,7 +33,7 @@ The client is deployed from `client/` on Vercel and the API from `server/` on Re
 1. Create the API service from the Render Blueprint. Set `MONGO_URI`, `ADMIN_EMAIL`, and `ADMIN_PASSWORD`; Render generates `JWT_SECRET`. Set `CLIENT_ORIGIN` temporarily to `https://example.invalid` so the API can deploy before the client URL is known.
 2. Create a Vercel project from this repository with `client/` as its Root Directory. Set `VITE_API_URL` to the deployed Render API URL followed by `/api`, then deploy. The `vercel.json` rewrite supports direct navigation to app routes.
 3. Set Render's `CLIENT_ORIGIN` to the Vercel production URL and redeploy the API. In Atlas Network Access, allow the outbound IP ranges shown for the Render service's region.
-4. In the Render service shell, run `npm run seed` from the service root to create the administrator account. Confirm `/api/health`, sign in, and try adding a listing.
+4. Point the local `server/.env` at the production Atlas database and run `cd server; npm run seed` locally to create the administrator account. Confirm `/api/health`, sign in, and try adding a listing.
 
 The Render free service may sleep after 15 minutes without traffic; its first request after sleeping can take about a minute to wake.
 
