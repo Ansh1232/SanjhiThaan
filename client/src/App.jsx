@@ -4,7 +4,7 @@ import AppShell from './components/AppShell.jsx';
 import { AppProvider, useApp } from './context/AppContext.jsx';
 import AuthPage from './pages/AuthPage.jsx';
 import Dashboard from './pages/Dashboard.jsx';
-import GuestLanding from './pages/GuestLanding.jsx';
+import GuestLanding from './pages/Landingpage.jsx';
 import Hukamnama from './pages/Hukamnama.jsx';
 import Notes from './pages/Notes.jsx';
 import Sessions from './pages/Sessions.jsx';
