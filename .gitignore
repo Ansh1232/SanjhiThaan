@@ -1,7 +1,8 @@
 node_modules/
 client/dist/
+.env.*
+!.env.example
 .env
 client/.env
 server/.env
 npm-debug.log*
-
