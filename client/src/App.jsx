@@ -12,7 +12,7 @@ import Settings from './pages/Settings.jsx';
 import Admin from './pages/Admin.jsx';
 
 function LoadingScreen() {
-  return <main className="app-loading" role="status">Loading Saadh Sangat…</main>;
+  return <main className="app-loading" role="status">Loading…</main>;
 }
 
 function HomeLayout() {
